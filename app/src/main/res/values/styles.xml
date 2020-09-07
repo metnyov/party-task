@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+    </style>
+
+    <style name="Theme.App.Launcher" parent="Theme.App.Base">
+        <item name="android:windowBackground">@color/primaryVariant</item>
+    </style>
+
+    <style name="Theme.App.Base">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+</resources>
