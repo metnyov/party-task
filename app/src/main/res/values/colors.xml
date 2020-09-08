@@ -2,6 +2,8 @@
 <resources>
     <!-- Base -->
     <color name="black">#000000</color>
+    <color name="textPrimary">#DE000000</color>
+    <color name="textLight">#99000000</color>
     <color name="white">#ffffff</color>
 
     <!-- Main -->
@@ -9,7 +11,7 @@
     <color name="primary">#FF5722</color>
     <color name="primaryVariant">#E64A19</color>
     <color name="surface">@color/white</color>
-    <color name="secondary">#FF5AF0</color>
+    <color name="secondary">#0397BE</color>
     <color name="onPrimary">@color/white</color>
     <color name="onSecondary">@color/white</color>
     <color name="onBackground">@color/black</color>

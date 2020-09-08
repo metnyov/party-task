@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">AddressBook</string>
+    <string name="app_name">Party Task</string>
+
+    <!-- Party list -->
+    <string name="party_list_title">Список вечеринок</string>
+
+    <!-- Party details -->
+    <string name="party_details_title">Вечеринка</string>
+    <string name="party_details_invited_by">Пригласил(а): %1$s</string>
+    <string name="party_details_come_with_you">С Вами придут</string>
+    <string name="party_details_nobody_come_with_you">С Вами никто не пойдёт :(</string>
+    <string name="party_details_load_error">Произошла ошибка при загрузке! Попробуйте позднее</string>
 </resources>
