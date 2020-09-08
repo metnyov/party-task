@@ -21,7 +21,7 @@ class MockAppApi(
     }
 
     override fun getPartyDetails(partyId: Long): NwPartyDetails? {
-        val type = Types.newParameterizedType(List::class.java, NwParty::class.java)
+        val type = Types.newParameterizedType(List::class.java, NwPartyDetails::class.java)
         val adapter = moshi.adapter<List<NwPartyDetails>>(type)
         val jsonString = getJsonDataFromAsset(PARTY_DETAILS_JSON)
         val items = adapter.fromJson(jsonString ?: "[]") ?: emptyList()
