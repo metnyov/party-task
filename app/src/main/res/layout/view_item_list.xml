@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivItemPhoto"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:scaleType="centerCrop"
+        tools:src="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        tools:text="Васисуалий" />
+
+</LinearLayout>
