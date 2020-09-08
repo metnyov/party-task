@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 0,
+        "name" : "Именины",
+        "image_url" : "http://safehomeblog.com/wp-content/uploads/2016/12/awesome-champagne-New-Year-Party-Games.jpg",
+        "invited_by" : {
+            "id" : 99,
+            "name" : "Кристина",
+            "photo_url" : "https://i1.sndcdn.com/artworks-000038173786-9t47w2-t500x500.jpg"
+        },
+        "come_with_you" : [
+            {
+                "id" : 100,
+                "name" : "Инесса",
+                "photo_url" : "https://ifpb.github.io/css-exercises/challenges/css/blog-denali/code-response/img/person.jpeg"
+            },
+            {
+                "id" : 101,
+                "name" : "Васисуалий",
+                "photo_url" : "https://i1.sndcdn.com/avatars-000243873826-og1b27-t500x500.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 1,
+        "name" : "Мальчишник",
+        "image_url" : "https://cdn.gelestatic.it/kataweb/tvzap/2019/06/taglioAlta_001176.jpg",
+        "invited_by" : {
+            "id" : 101,
+            "name" : "Васисуалий",
+            "photo_url" : "https://i1.sndcdn.com/avatars-000243873826-og1b27-t500x500.jpg"
+        },
+        "come_with_you" : [
+            {
+                "id" : 102,
+                "name" : "Фил",
+                "photo_url" : "https://kupidonia.ru/content/lists/photo/big/600_1.jpg"
+            },
+            {
+                "id" : 103,
+                "name" : "Аркаша",
+                "photo_url" : "https://i1.sndcdn.com/avatars-000060984102-pvv74i-t500x500.jpg"
+            },
+            {
+                "id" : 104,
+                "name" : "Пётр Петрович",
+                "photo_url" : "https://mtdata.ru/u2/photo5AC8/20906966295-0/original.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "name" : "Новый год",
+        "image_url" : "https://www.cadeau-maestro.com/img/cms/noel/sapin-04.jpg",
+        "invited_by" : {
+            "id" : 102,
+            "name" : "Фил",
+            "photo_url" : "https://kupidonia.ru/content/lists/photo/big/600_1.jpg"
+        },
+        "come_with_you" : null
+    }
+]

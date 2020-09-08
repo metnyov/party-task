@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 0,
+        "name" : "Именины",
+        "image_url" : "http://safehomeblog.com/wp-content/uploads/2016/12/awesome-champagne-New-Year-Party-Games.jpg"
+    },
+    {
+        "id" : 1,
+        "name" : "Мальчишник",
+        "image_url" : "https://cdn.gelestatic.it/kataweb/tvzap/2019/06/taglioAlta_001176.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Новый год",
+        "image_url" : "https://www.cadeau-maestro.com/img/cms/noel/sapin-04.jpg"
+    }
+]
