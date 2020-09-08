@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarPartyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/party_details_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svPartyDetailsContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPartyDetailsBanner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="360:180"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPartyDetailsInvitedByPhoto"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivPartyDetailsBanner"
+                tools:src="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPartyDetailsName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/ivPartyDetailsInvitedByPhoto"
+                app:layout_constraintTop_toBottomOf="@id/ivPartyDetailsBanner"
+                tools:text="Именины" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPartyDetailsInvitedBy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/textLight"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/ivPartyDetailsInvitedByPhoto"
+                app:layout_constraintTop_toBottomOf="@id/tvPartyDetailsName"
+                tools:text="Пригласил(а): Кристина" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPartyDetailsComeWithYouTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/party_details_come_with_you"
+                android:textColor="@color/textLight"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/tvPartyDetailsInvitedBy" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPartyDetailsComeWithYou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/tvPartyDetailsComeWithYouTitle"
+                tools:itemCount="2"
+                tools:listitem="@layout/view_item_list" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

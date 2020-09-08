@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.metnyov.party.R
 import com.github.metnyov.party.di.presentationModule
+import com.github.metnyov.party.presentation.common.navigation.toScreen
+import com.github.metnyov.party.presentation.screen.partylist.PartyListFragment
 import moxy.MvpAppCompatActivity
 import org.kodein.di.DIAware
 import org.kodein.di.DITrigger
@@ -41,7 +43,7 @@ class MainActivity : MvpAppCompatActivity(), DIAware {
 
         setContentView(R.layout.activity_main)
 
-        // TODO router.newRootScreen()
+        router.newRootScreen(PartyListFragment().toScreen())
     }
 
     override fun onResumeFragments() {
