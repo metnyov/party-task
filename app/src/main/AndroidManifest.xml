@@ -2,6 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.github.metnyov.party">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.github.metnyov.party.App"
         android:allowBackup="true"
